@@ -1,5 +1,8 @@
 #!/bin/bash
 
+B=$(cd $(dirname $0); pwd)
+cd $B
+
 set -x
 
 curl https://kawal-c1.appspot.com/api/c/0 > 0.json
