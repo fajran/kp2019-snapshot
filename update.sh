@@ -12,6 +12,11 @@ do
 done
 
 git add "*.json" "*.txt"
+
+pushd tools/wat-doet-mod
+./update.sh
+popd
+
 git commit -m "$(date -R)"
 git push origin master
 
